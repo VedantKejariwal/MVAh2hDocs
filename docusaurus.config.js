@@ -148,4 +148,10 @@ const config = {
     }),
 };
 
-export default config;
+export default {
+  url: 'https://VedantKejariwal.github.io', // Your GitHub Pages URL
+  baseUrl: '/MVAh2hDocs/', // Subdirectory for the repository
+  projectName: 'MVAh2hDocs', // Your repository name
+  organizationName: 'VedantKejariwal', // Your GitHub username
+  trailingSlash: false, // Optional but recommended
+};
