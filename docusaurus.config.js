@@ -149,9 +149,10 @@ const config = {
 };
 
 export default {
-  url: 'https://VedantKejariwal.github.io', // Your GitHub Pages URL
-  baseUrl: '/MVAh2hDocs/', // Subdirectory for the repository
-  projectName: 'MVAh2hDocs', // Your repository name
-  organizationName: 'VedantKejariwal', // Your GitHub username
-  trailingSlash: false, // Optional but recommended
+  title: 'H2H Market Documentation',
+  tagline: 'Your go-to resource for the documenation for the Head to Head Market',
+  url: 'https://VedantKejariwal.github.io',
+  baseUrl: '/MVAh2hDocs/',
+  projectName: 'MVAh2hDocs',
+  organizationName: 'VedantKejariwal',
 };
