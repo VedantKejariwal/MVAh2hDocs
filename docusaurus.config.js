@@ -152,10 +152,11 @@ const config = {
 
 export default {
   title: 'H2H Market Documentation',
-  tagline: 'Your go-to resource for the documenation for the Head to Head Market',
+  tagline: 'Your go-to resource for the documentation for the Head to Head Market',
   url: 'https://VedantKejariwal.github.io',
   baseUrl: '/MVAh2hDocs/',
-  projectName: 'MVAh2hDocs',
-  organizationName: 'VedantKejariwal',
-  trailingSlash: false,
+  organizationName: 'VedantKejariwal', // GitHub username or organization
+  projectName: 'MVAh2hDocs', // Repository name
+  deploymentBranch: 'gh-pages', // Deployment branch (default for non-org repos)
+  trailingSlash: true, // To avoid routing issues on GitHub Pages
 };
