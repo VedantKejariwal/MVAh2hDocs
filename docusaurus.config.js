@@ -148,6 +148,8 @@ const config = {
     }),
 };
 
+//export default config; this is the default code
+
 export default {
   title: 'H2H Market Documentation',
   tagline: 'Your go-to resource for the documenation for the Head to Head Market',
@@ -155,4 +157,5 @@ export default {
   baseUrl: '/MVAh2hDocs/',
   projectName: 'MVAh2hDocs',
   organizationName: 'VedantKejariwal',
+  trailingSlash: false,
 };
