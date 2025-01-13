@@ -148,15 +148,4 @@ const config = {
     }),
 };
 
-//export default config; this is the default code
-
-export default {
-  title: 'H2H Market Documentation',
-  tagline: 'Your go-to resource for the documentation for the Head to Head Market',
-  url: 'https://VedantKejariwal.github.io',
-  baseUrl: '/MVAh2hDocs/',
-  organizationName: 'VedantKejariwal', // GitHub username or organization
-  projectName: 'MVAh2hDocs', // Repository name
-  deploymentBranch: 'gh-pages', // Deployment branch (default for non-org repos)
-  trailingSlash: true, // To avoid routing issues on GitHub Pages
-};
+export default config; //this is the default code
