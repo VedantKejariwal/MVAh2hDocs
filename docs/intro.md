@@ -1,47 +1,42 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
+---
+# Introduction
+
+Welcome to the documentation for **MVA h2h marketplace**!
+
+This documentation will guide you through the **features, setup, and usage** of the project. Below, you will find a structured list of all the sections included in this documentation.
+
 ---
 
-# Tutorial Intro
+## **Callbacks Docs**
+This section explains the core **callbacks** used in the game logic.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- [Callbacks Component](./callbacks/callbacks1.md)
+- [Empirica.onGameStart()](./callbacks/onGameStart())
+- [Empirica.onRoundStart()](./callbacks/onRoundStart().md)
+- [Empirica.onStageEnded()](./callbacks/onStageEnded().md)
 
-## Getting Started
+---
 
-Get started by **creating a new site**.
+## **Client Components Docs**
+This section provides details on the client-side **React components** used in the project.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- [FeedbackPage](./clientComponents/feedbackPage.md)
+- [ProductCard](./clientComponents/productCard.md)
+- [ResultsCard](./clientComponents/resultsCard.md)
 
-### What you'll need
+---
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## **Client Stages Docs**
+This section explains the **different game stages** in the client-side implementation.
 
-## Generate a new site
+- [Client Stage Component](./clientStages/clientStage.md)
+- [ConsumerChoice](./clientStages/consumerChoice.md)
+- [FeedbackStage](./clientStages/feedbackStage.md)
+- [ProducerChoice](./clientStages/producerChoice.md)
+- [Results](./clientStages/results.md)
 
-Generate a new Docusaurus site using the **classic template**.
+---
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+By following this documentation, you will gain an in-depth understanding of the **MVA h2h marketplace** and how to work with it effectively.

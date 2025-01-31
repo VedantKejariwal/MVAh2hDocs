@@ -1,10 +1,10 @@
 ---
 sidebar_label: 'ConsumerChoice'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # <span class="h1style">Consumer Choice</span>
-Welcome to the documentation for the Consumer Choice component! This guide will help understand the code and its features.
+Welcome to the documentation for the Consumer Choice component! This guide will help understand the code and its features. This page is verified by: *Vedant Kejariwal*
 
 ## <span class="h2style">Functions</span>
 This is the list of functions that are defined on this page.

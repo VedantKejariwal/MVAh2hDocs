@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 # <span class="h1style">Product Card</span>
-Welcome to the documentation for the Product Card! This guide will help understand the code and its features.
+Welcome to the documentation for the Product Card! This guide will help understand the code and its features. This page is verified by: *Vedant Kejariwal*
 
 ## <span class="h2style">Functions</span>
 This is the list of functions that are defined on this page.

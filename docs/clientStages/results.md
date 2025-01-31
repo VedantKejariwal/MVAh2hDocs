@@ -1,10 +1,10 @@
 ---
-sidebar_label: 'Results'
-sidebar_position: 4
+sidebar_label: 'Results Component'
+sidebar_position: 5
 ---
 
 # <span class="h1style">Results</span>
-Welcome to the documentation for the Results stage! This guide will help understand the code and its features.
+Welcome to the documentation for the Results stage! This guide will help understand the code and its features. This page is verified by: *Vedant Kejariwal*
 
 ## <span class="h2style">Functions</span>
 This is the list of functions that are defined on this page.

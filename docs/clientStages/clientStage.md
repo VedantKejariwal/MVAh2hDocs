@@ -1,10 +1,10 @@
 ---
 sidebar_label: 'Client Stage Component'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # <span class="h1style">Stage Component</span>
-This document explains the `Stage` component, its logic, functionality, and its role within the application. This component manages the rendering of different stages in the game based on the current state.
+This document explains the `Stage` component, its logic, functionality, and its role within the application. This component manages the rendering of different stages in the game based on the current state. This page is verified by: *Vedant Kejariwal*
 
 ---
 
