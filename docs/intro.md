@@ -23,7 +23,7 @@ This section explains the core **callbacks** used in the game logic.
 This section provides details on the client-side **React components** used in the project.
 
 - [FeedbackPage](./clientComponents/feedbackPage.md)
-- [ProductCard](./clientComponents/productCard.md)
+- [ProductCard](./clientComponents/productCardPage.md)
 - [ResultsCard](./clientComponents/resultsCard.md)
 
 ---
@@ -33,7 +33,7 @@ This section explains the **different game stages** in the client-side implement
 
 - [Client Stage Component](./clientStages/clientStage.md)
 - [ConsumerChoice](./clientStages/consumerChoice.md)
-- [FeedbackStage](./clientStages/feedbackStage.md)
+- [FeedbackStage](./clientStages/feedback.md)
 - [ProducerChoice](./clientStages/producerChoice.md)
 - [Results](./clientStages/results.md)
 
