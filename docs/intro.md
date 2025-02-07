@@ -12,30 +12,30 @@ This documentation will guide you through the **features, setup, and usage** of 
 ## **Callbacks Docs**
 This section explains the core **callbacks** used in the game logic.
 
-- [Callbacks Component](./callbacks/callbacks1.md)
-- [Empirica.onGameStart()](./callbacks/onGameStart())
-- [Empirica.onRoundStart()](./callbacks/onRoundStart().md)
-- [Empirica.onStageEnded()](./callbacks/onStageEnded().md)
+- [Callbacks Component](/docs/callbacks/callbacks1.md)
+- [Empirica.onGameStart()](/docs/callbacks/onGameStart())
+- [Empirica.onRoundStart()](/docs/callbacks/onRoundStart().md)
+- [Empirica.onStageEnded()](/docs/callbacks/onStageEnded().md)
 
 ---
 
 ## **Client Components Docs**
 This section provides details on the client-side **React components** used in the project.
 
-- [FeedbackPage](./clientComponents/feedbackPage.md)
-- [ProductCard](./clientComponents/productCardPage.md)
-- [ResultsCard](./clientComponents/resultsCard.md)
+- [FeedbackPage](/docs/clientComponents/feedbackPage.md)
+- [ProductCard](/docs/clientComponents/productCardPage.md)
+- [ResultsCard](/docs/clientComponents/resultsCard.md)
 
 ---
 
 ## **Client Stages Docs**
 This section explains the **different game stages** in the client-side implementation.
 
-- [Client Stage Component](./clientStages/clientStage.md)
-- [ConsumerChoice](./clientStages/consumerChoice.md)
-- [FeedbackStage](./clientStages/feedback.md)
-- [ProducerChoice](./clientStages/producerChoice.md)
-- [Results](./clientStages/results.md)
+- [Client Stage Component](/docs/clientStages/clientStage.md)
+- [ConsumerChoice](/docs/clientStages/consumerChoice.md)
+- [FeedbackStage](/docs/clientStages/feedback.md)
+- [ProducerChoice](/docs/clientStages/producerChoice.md)
+- [Results](/docs/clientStages/results.md)
 
 ---
 
