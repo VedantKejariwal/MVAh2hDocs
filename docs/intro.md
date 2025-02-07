@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Welcome to the documentation for **MVA h2h marketplace**!
 
-This documentation will guide you through the **features, setup, and usage** of the project. Below, you will find a structured list of all the sections included in this documentation.
+This documentation will guide you through the **features, setup, and usage** of the project. Below, you will find a structured list of all the sections included in this documentation for the project.
 
 ---
 
