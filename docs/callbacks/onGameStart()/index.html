@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-callbacks/onGameStart()" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">&lt;span class=&quot;h1style&quot;&gt;Game Callbacks&lt;/span&gt; | H2H Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vedantkejariwal.github.io/MVAh2hDocs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://vedantkejariwal.github.io/MVAh2hDocs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://vedantkejariwal.github.io/MVAh2hDocs/docs/callbacks/onGameStart()"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="&lt;span class=&quot;h1style&quot;&gt;Game Callbacks&lt;/span&gt; | H2H Docs"><meta data-rh="true" name="description" content="Welcome to the documentation for the onGameStart() function! This guide will explain how the game initializes, assigns roles, and structures rounds. This page is verified by: Vedant Kejariwal"><meta data-rh="true" property="og:description" content="Welcome to the documentation for the onGameStart() function! This guide will explain how the game initializes, assigns roles, and structures rounds. This page is verified by: Vedant Kejariwal"><link data-rh="true" rel="icon" href="/MVAh2hDocs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://vedantkejariwal.github.io/MVAh2hDocs/docs/callbacks/onGameStart()"><link data-rh="true" rel="alternate" href="https://vedantkejariwal.github.io/MVAh2hDocs/docs/callbacks/onGameStart()" hreflang="en"><link data-rh="true" rel="alternate" href="https://vedantkejariwal.github.io/MVAh2hDocs/docs/callbacks/onGameStart()" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/MVAh2hDocs/blog/rss.xml" title="H2H Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/MVAh2hDocs/blog/atom.xml" title="H2H Docs Atom Feed"><link rel="stylesheet" href="/MVAh2hDocs/assets/css/styles.c49ce462.css">
+<script src="/MVAh2hDocs/assets/js/runtime~main.360cc487.js" defer="defer"></script>
+<script src="/MVAh2hDocs/assets/js/main.22cf50e7.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/MVAh2hDocs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/MVAh2hDocs/"><div class="navbar__logo"><img src="/MVAh2hDocs/img/logo.svg" alt="H2H Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/MVAh2hDocs/img/logo.svg" alt="H2H Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">H2H Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/MVAh2hDocs/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/MVAh2hDocs/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/VedantKejariwal/MVAh2hDocs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/MVAh2hDocs/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/MVAh2hDocs/docs/category/callbacks-docs">Callbacks Docs</a><button aria-label="Collapse sidebar category &#x27;Callbacks Docs&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/MVAh2hDocs/docs/callbacks/callbacks1">Callbacks Component</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/MVAh2hDocs/docs/callbacks/onGameStart()">Empirica.onGameStart()</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/MVAh2hDocs/docs/callbacks/onRoundStart()">Empirica.onRoundStart()</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/MVAh2hDocs/docs/callbacks/onStageEnded()">Empirica.onStageEnded()</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/MVAh2hDocs/docs/category/client-stages-docs">Client Stages Docs</a><button aria-label="Expand sidebar category &#x27;Client Stages Docs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/MVAh2hDocs/docs/category/client-components-docs">Client Components Docs</a><button aria-label="Expand sidebar category &#x27;Client Components Docs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/MVAh2hDocs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/MVAh2hDocs/docs/category/callbacks-docs"><span itemprop="name">Callbacks Docs</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Empirica.onGameStart()</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1><span class="h1style">Game Callbacks</span></h1></header>
+<p>Welcome to the documentation for the <code>onGameStart()</code> function! This guide will explain how the game initializes, assigns roles, and structures rounds. This page is verified by: <em>Vedant Kejariwal</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions"><span class="h2style">Functions</span><a href="#functions" class="hash-link" aria-label="Direct link to functions" title="Direct link to functions">​</a></h2>
+<p>This function defines the <strong>game structure</strong>, <strong>player attributes</strong>, and <strong>round stages</strong>. It ensures that the simulation starts with the correct conditions.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="function-empiricaongamestart"><span class="custom-function-heading">Function: <code>Empirica.onGameStart()</code></span><a href="#function-empiricaongamestart" class="hash-link" aria-label="Direct link to function-empiricaongamestart" title="Direct link to function-empiricaongamestart">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="explanation">Explanation:<a href="#explanation" class="hash-link" aria-label="Direct link to Explanation:" title="Direct link to Explanation:">​</a></h4>
+<ul>
+<li>This function is executed <strong>at the start of the game</strong>.</li>
+<li>It defines the <strong>game parameters</strong>, <strong>round stages</strong>, and <strong>assigns roles to players</strong>.</li>
+<li>It ensures that all players begin with the correct attributes based on whether they are <strong>producers or consumers</strong>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="game-parameters"><span class="custom-function-heading">Game Parameters</span><a href="#game-parameters" class="hash-link" aria-label="Direct link to game-parameters" title="Direct link to game-parameters">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="explanation-1">Explanation:<a href="#explanation-1" class="hash-link" aria-label="Direct link to Explanation:" title="Direct link to Explanation:">​</a></h4>
+<ul>
+<li>The game starts by retrieving key settings from <strong>treatment parameters</strong>.</li>
+<li>These variables determine the structure of the game.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="extracted-game-parameters"><strong>Extracted Game Parameters</strong><a href="#extracted-game-parameters" class="hash-link" aria-label="Direct link to extracted-game-parameters" title="Direct link to extracted-game-parameters">​</a></h5>
+<ul>
+<li><strong><code>playerCount</code></strong> → Total number of players.</li>
+<li><strong><code>warrantTreatment</code></strong> → Specifies the use of warranties in the game.</li>
+<li><strong><code>producerCount</code></strong> → Number of <strong>producers</strong> in the game.</li>
+<li><strong><code>consumerCount</code></strong> → Number of <strong>consumers</strong> in the game.</li>
+<li><strong><code>numRounds</code></strong> → Total number of rounds in the game.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-rounds"><span class="custom-function-heading">Adding Rounds</span><a href="#adding-rounds" class="hash-link" aria-label="Direct link to adding-rounds" title="Direct link to adding-rounds">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="explanation-2">Explanation:<a href="#explanation-2" class="hash-link" aria-label="Direct link to Explanation:" title="Direct link to Explanation:">​</a></h4>
+<ul>
+<li>The function <strong>iterates</strong> through the total number of rounds (<code>numRounds</code>).</li>
+<li>Each <strong>round</strong> consists of different <strong>stages</strong> that represent the phases of gameplay.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="stages-in-each-round"><strong>Stages in Each Round</strong><a href="#stages-in-each-round" class="hash-link" aria-label="Direct link to stages-in-each-round" title="Direct link to stages-in-each-round">​</a></h5>
+<ol>
+<li><strong>First Round Only</strong>
+<ul>
+<li><strong><code>if (i === 1)</code></strong> → The first round has two <strong>additional</strong> stages:<!-- -->
+<ul>
+<li><strong><code>&quot;SelectRole&quot;</code></strong> → Players are assigned their roles.</li>
+<li><strong><code>&quot;Tutorial&quot;</code></strong> → Introduces game mechanics.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Stages in Every Round</strong>
+<ul>
+<li><strong><code>&quot;ProducerChoice&quot;</code></strong> → Producers make decisions on quality and branding.</li>
+<li><strong><code>&quot;ConsumerChoice&quot;</code></strong> → Consumers decide which producers to purchase from.</li>
+<li><strong><code>&quot;Feedback&quot;</code></strong> → Consumer challenges and reviews are processed.</li>
+<li><strong><code>&quot;Results&quot;</code></strong> → Updates players&#x27; attributes and displays outcomes.</li>
+</ul>
+</li>
+</ol>
+<p>Each round ensures that <strong>producers and consumers interact, trade, and provide feedback</strong>.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assigning-roles"><span class="custom-function-heading">Assigning Roles</span><a href="#assigning-roles" class="hash-link" aria-label="Direct link to assigning-roles" title="Direct link to assigning-roles">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="explanation-3">Explanation:<a href="#explanation-3" class="hash-link" aria-label="Direct link to Explanation:" title="Direct link to Explanation:">​</a></h4>
+<ul>
+<li>Players are <strong>randomly shuffled</strong> before roles are assigned.</li>
+<li>The function <strong>determines</strong> whether a player will be a <strong>producer</strong> or a <strong>consumer</strong>.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="shuffling-players"><strong>Shuffling Players</strong><a href="#shuffling-players" class="hash-link" aria-label="Direct link to shuffling-players" title="Direct link to shuffling-players">​</a></h5>
+<ul>
+<li><strong><code>const shuffledPlayers = shuffleArray([...game.players]);</code></strong>
+<ul>
+<li>Ensures <strong>random role distribution</strong>.</li>
+<li>Prevents predictable player positioning.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="producer-initialization"><span class="custom-function-heading">Producer Initialization</span><a href="#producer-initialization" class="hash-link" aria-label="Direct link to producer-initialization" title="Direct link to producer-initialization">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="explanation-4">Explanation:<a href="#explanation-4" class="hash-link" aria-label="Direct link to Explanation:" title="Direct link to Explanation:">​</a></h4>
+<ul>
+<li>Producers represent businesses that <strong>sell products</strong>.</li>
+<li>Each producer starts with <strong>a unique brand, capital, and attributes</strong>.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="key-producer-attributes"><strong>Key Producer Attributes</strong><a href="#key-producer-attributes" class="hash-link" aria-label="Direct link to key-producer-attributes" title="Direct link to key-producer-attributes">​</a></h5>
+<ul>
+<li><strong><code>player.set(&quot;role&quot;, &quot;producer&quot;);</code></strong> → Assigns producer role.</li>
+<li><strong><code>player.set(&quot;capital&quot;, initialCapital);</code></strong> → Starting funds for investments.</li>
+<li><strong><code>player.set(&quot;brandName&quot;, getRandomName());</code></strong> → Assigns a random brand name.</li>
+<li><strong><code>player.set(&quot;currentQuality&quot;, &quot;&quot;);</code></strong> → Quality is <strong>chosen later</strong> in the round.</li>
+<li><strong><code>player.set(&quot;profits&quot;, [0]);</code></strong> → Tracks profits over time.</li>
+<li><strong><code>player.set(&quot;claims&quot;, [0, 0]);</code></strong> → Tracks <strong>successful vs. failed claims</strong>.</li>
+<li><strong><code>player.set(&quot;sold&quot;, []);</code></strong> → List of consumers who purchased from them.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="tracking-performance"><strong>Tracking Performance</strong><a href="#tracking-performance" class="hash-link" aria-label="Direct link to tracking-performance" title="Direct link to tracking-performance">​</a></h5>
+<ul>
+<li><strong><code>player.set(&quot;reviews&quot;, [[0, 0]]);</code></strong> → Tracks <strong>positive &amp; negative feedback</strong>.</li>
+<li><strong><code>player.set(&quot;score&quot;, []);</code></strong> → Individual round scores.</li>
+<li><strong><code>player.set(&quot;totalScore&quot;, [0]);</code></strong> → Cumulative game score.</li>
+<li><strong><code>player.set(&quot;totalProfits&quot;, 0);</code></strong> → Total profit throughout the game.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="challenge--branding-mechanics"><strong>Challenge &amp; Branding Mechanics</strong><a href="#challenge--branding-mechanics" class="hash-link" aria-label="Direct link to challenge--branding-mechanics" title="Direct link to challenge--branding-mechanics">​</a></h5>
+<ul>
+<li><strong><code>player.set(&quot;warrants&quot;, []);</code></strong> → Tracks <strong>if a producer issued warranties</strong>.</li>
+<li><strong><code>player.set(&quot;challenges&quot;, []);</code></strong> → Tracks <strong>who challenged them</strong>.</li>
+<li><strong><code>player.set(&quot;changedBrand&quot;, []);</code></strong> → Tracks if they <strong>rebranded</strong>.</li>
+</ul>
+<p>By initializing these attributes, the function ensures that <strong>producers have everything they need to operate in the game</strong>.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="consumer-initialization"><span class="custom-function-heading">Consumer Initialization</span><a href="#consumer-initialization" class="hash-link" aria-label="Direct link to consumer-initialization" title="Direct link to consumer-initialization">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="explanation-5">Explanation:<a href="#explanation-5" class="hash-link" aria-label="Direct link to Explanation:" title="Direct link to Explanation:">​</a></h4>
+<ul>
+<li>Consumers <strong>purchase products</strong>, issue challenges, and earn points based on their choices.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="key-consumer-attributes"><strong>Key Consumer Attributes</strong><a href="#key-consumer-attributes" class="hash-link" aria-label="Direct link to key-consumer-attributes" title="Direct link to key-consumer-attributes">​</a></h5>
+<ul>
+<li><strong><code>player.set(&quot;role&quot;, &quot;consumer&quot;);</code></strong> → Assigns consumer role.</li>
+<li><strong><code>player.set(&quot;wallet&quot;, initialWallet);</code></strong> → Starting budget for purchases.</li>
+<li><strong><code>player.set(&quot;cart&quot;, []);</code></strong> → Stores selected products each round.</li>
+<li><strong><code>player.set(&quot;purchasedFrom&quot;, []);</code></strong> → Tracks producers they bought from.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="challenge--review-system"><strong>Challenge &amp; Review System</strong><a href="#challenge--review-system" class="hash-link" aria-label="Direct link to challenge--review-system" title="Direct link to challenge--review-system">​</a></h5>
+<ul>
+<li><strong><code>player.set(&quot;consumerReviews&quot;, {});</code></strong> → Stores <strong>feedback on producers</strong>.</li>
+<li><strong><code>player.set(&quot;currentChallenge&quot;, []);</code></strong> → List of <strong>producers they challenge</strong>.</li>
+<li><strong><code>player.set(&quot;challenged&quot;, []);</code></strong> → List of <strong>all past challenges</strong>.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="tracking-performance-1"><strong>Tracking Performance</strong><a href="#tracking-performance-1" class="hash-link" aria-label="Direct link to tracking-performance-1" title="Direct link to tracking-performance-1">​</a></h5>
+<ul>
+<li><strong><code>player.set(&quot;score&quot;, []);</code></strong> → Individual round scores.</li>
+<li><strong><code>player.set(&quot;totalScore&quot;, [0]);</code></strong> → Cumulative game score.</li>
+<li><strong><code>player.set(&quot;roundScore&quot;, []);</code></strong> → Score for each round.</li>
+</ul>
+<p>By initializing these attributes, the function ensures that <strong>consumers have a structured way to engage with the game</strong>.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="logical-flow-of-the-function"><span class="custom-function-heading">Logical Flow of the Function</span><a href="#logical-flow-of-the-function" class="hash-link" aria-label="Direct link to logical-flow-of-the-function" title="Direct link to logical-flow-of-the-function">​</a></h3>
+<ol>
+<li>
+<p><strong>Define Game Parameters</strong></p>
+<ul>
+<li>Retrieve <strong>player count, rounds, and game rules</strong> from <code>treatment</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create Rounds</strong></p>
+<ul>
+<li>Generate <strong>rounds</strong> with <strong>specific stages</strong> for gameplay progression.</li>
+</ul>
+</li>
+<li>
+<p><strong>Shuffle Players</strong></p>
+<ul>
+<li>Randomize <strong>player order</strong> to ensure fair role assignment.</li>
+</ul>
+</li>
+<li>
+<p><strong>Assign Producers</strong></p>
+<ul>
+<li><strong>Give producers</strong> capital, brand names, and tracking variables.</li>
+</ul>
+</li>
+<li>
+<p><strong>Assign Consumers</strong></p>
+<ul>
+<li><strong>Give consumers</strong> wallets, tracking systems, and purchase abilities.</li>
+</ul>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/VedantKejariwal/MVAh2hDocs/edit/main/docs/callbacks/onGameStart().md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/MVAh2hDocs/docs/callbacks/callbacks1"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Callbacks Component</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/MVAh2hDocs/docs/callbacks/onRoundStart()"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Empirica.onRoundStart()</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#functions" class="table-of-contents__link toc-highlight"><span class="h2style">Functions</span></a><ul><li><a href="#function-empiricaongamestart" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Function: <code>Empirica.onGameStart()</code></span></a></li><li><a href="#game-parameters" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Game Parameters</span></a></li><li><a href="#adding-rounds" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Adding Rounds</span></a></li><li><a href="#assigning-roles" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Assigning Roles</span></a></li><li><a href="#producer-initialization" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Producer Initialization</span></a></li><li><a href="#consumer-initialization" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Consumer Initialization</span></a></li><li><a href="#logical-flow-of-the-function" class="table-of-contents__link toc-highlight"><span class="custom-function-heading">Logical Flow of the Function</span></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/MVAh2hDocs/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/MVAh2hDocs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/VedantKejariwal/MVAh2hDocs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 H2H Docs. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
