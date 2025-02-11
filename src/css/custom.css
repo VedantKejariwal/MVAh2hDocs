@@ -35,20 +35,15 @@
   background-color: #00b3ff;
   color: white;
   border-radius: 20px;
-  font-size: 1rem; /* Adjust font size for headings */
+  font-size: 1rem; 
   font-weight: bold;
-  display: inline-block; /* Makes the heading box fit its content */
+  display: inline-block;
 }
 
 .custom-function-heading {
-  font-size: 1.5rem; /* Adjust as per your preference */
-  color: #000000; /* Green color */
+  color: #4c87af; 
   font-weight: bold;
-  padding: 5px 10px;
-  background-color: #bebebe; /* Light green background */
-  border-left: 5px solid #000000; /* Green border for visual effect */
-  border-radius: 5px;
-  margin-bottom: 15px;
+  border-bottom: 2px solid #2b7fc8;
 }
 
 /* Style for # (H1) */
@@ -57,21 +52,16 @@
   font-size: 2.5rem; /* Larger font size */
   font-weight: bold; /* Bold text */
   text-align: center; /* Center alignment */
-  border-bottom: 3px solid #032ac6; /* Bottom border */
+  border-bottom: 3px solid #2b7fc8; /* Bottom border */
   padding-bottom: 10px; /* Padding below text */
   margin-bottom: 20px; /* Spacing below the heading */
 }
 
 /* Style for ## (H2) */
 .h2style {
-  color: #09487c; /* Blue color */
+  color: #4c87af; /* Blue color */
   font-size: 2rem; /* Medium font size */
-  font-weight: 600; /* Slightly bold */
-  background-color: #f0f8ff; /* Light blue background */
-  padding: 10px 20px; /* Padding inside the heading */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-top: 20px; /* Spacing above the heading */
+  font-weight: 600; /* Slightly bold */ 
 }
 
 .custom-code-block {

@@ -43,16 +43,16 @@ const config = {
   ],
 
   themeConfig: ({
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/favicon.png',
     navbar: {
-      title: 'H2H Docs',
+      title: 'Platform Governance Research Docs',
       logo: {
-        alt: 'H2H Logo',
-        src: 'img/logo.svg',
+        alt: 'Digital Research Lab Logo',
+        src: 'img/favicon.png',
       },
       items: [
-        { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Tutorial' },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Documentation' },
+        { href: 'https://truthmarket.com/', label: 'Website', position: 'left' },
         { href: 'https://github.com/VedantKejariwal/MVAh2hDocs', label: 'GitHub', position: 'right' },
       ],
     },
@@ -61,20 +61,20 @@ const config = {
       links: [
         {
           title: 'Docs',
-          items: [{ label: 'Tutorial', to: '/docs/intro' }],
+          items: [{ label: 'Documentation', to: '/docs/intro' }],
         },
         {
-          title: 'Community',
+          title: 'Publications',
           items: [
-            { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
-            { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
-            { label: 'X', href: 'https://x.com/docusaurus' },
+            { label: 'Free Speech & the Fake News Problem', href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4414261' },
+            { label: 'Improving §230, Preserving Democracy & Protecting Free Speech', href: 'https://cacm.acm.org/opinion/improving-section-230-preserving-democracy-and-protecting-free-speech/' },
+            { label: 'Truth is Warranted: The Impact of Self-Certification on Misinformation', href: 'https://www.dropbox.com/scl/fi/nopf4dhw86fh5oej7rquw/Certifiably_True-The_Impact_Of_Self_Certification_On_Misinfo.pdf?rlkey=vp9rcew7hq98plmhh5asofy93&e=1&dl=0' },
+            { label: 'Secure Account Recovery for a Privacy-Preserving Web Service', href: 'https://www.usenix.org/system/files/usenixsecurity24-little.pdf' },
           ],
         },
         {
           title: 'More',
           items: [
-            { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/VedantKejariwal/MVAh2hDocs' },
           ],
         },
