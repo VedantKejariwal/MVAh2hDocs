@@ -3,7 +3,7 @@ sidebar_label: 'Empirica.onGameStart()'
 sidebar_position: 2
 ---
 
-# <span class="h1style">Game Callbacks</span>
+# <span class="h1style">Game Callbacks - Game Start</span>
 Welcome to the documentation for the `onGameStart()` function! This guide will explain how the game initializes, assigns roles, and structures rounds. This page is verified by: *Vedant Kejariwal*
 
 ## <span class="h2style">Functions</span>

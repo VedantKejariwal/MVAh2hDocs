@@ -3,7 +3,7 @@ sidebar_label: 'Empirica.onRoundStart()'
 sidebar_position: 3
 ---
 
-# <span class="h1style">Game Callbacks</span>
+# <span class="h1style">Game Callbacks - Round Start</span>
 Welcome to the documentation for the `onRoundStart()` function! This guide will help understand the code and its features. This page is verified by: *Vedant Kejariwal*
 
 ## <span class="h2style">Functions</span>

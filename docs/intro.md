@@ -9,6 +9,67 @@ This documentation will guide you through the **features, setup, and usage** of 
 
 ---
 
+## **About This Documentation**
+The **H2H Market Documentation** website is a guide for understanding how the **Empirica Marketplace Simulation** works.
+
+### **What it does:**
+- **Explains how the H2H market codebase works** – covers client folder, server folder, and mechanics.
+- **Breaks down the code** – details how different parts of the system function together.
+- **Helps developers** – modify and expand the codebase.
+- **Provides deployment instructions** – how to install, run, and use the simulation.
+- **Documents each feature** – detailed info on stages, functions, and variables.
+
+This serves as a **resource** to make the H2H market simulation **easy to understand and use**.  
+Files are organized into the following folders:
+- **Callbacks**
+- **Client Stages**
+- **Client Components**
+- **Deployment**  
+
+> **Folder format matches the main branch of the h2h-market repository!**
+
+---
+
+## **Documentation: How to document code?**
+You should ideally document **everything** you push or edit in the **h2h-market** repository!
+
+### **Setup for editing the documentation:**
+The website is built using **Docusaurus** (https://docusaurus.io/docs). To contribute, **pull the code** from the `documentation` branch in the repository.
+
+### **Steps to start working:**
+1. **Install Dependencies:** run `install npm` in your terminal.
+2. **Run the site locally:** run `npm run start`.
+3. **Modify and edit markdown files** following the documentation structure.
+4. **Commit and push your changes** to keep the documentation updated.
+
+**Important:** Try **NOT** to edit the configuration file, as it is linked to deployment!
+
+---
+
+## **Documentation: Format to document code - Client Side**
+Each file in the **h2h-market** repository has a **corresponding file** in this documentation website.
+
+### **How to document a function:**
+1. **Add a description** – What the function does.
+2. **List function parameters** – Explain input variables.
+3. **Specify the return value** – What the function returns.
+4. **Include a code explanation** – With clear logical steps.
+5. **Explain logical flow** – Describe how the function works step by step.
+
+---
+
+## **Documentation: Format to document code - Callbacks.js**
+Each function in **callbacks.js** has a **separate file** in this documentation website.
+
+### **How to document a function in Callbacks.js:**
+- **Each function file is divided into conditions.**
+- **Each condition is further divided into smaller conditions (if statements).**
+- **For each condition:**
+  1. **Include a description of the condition (in the first line).**
+  2. **Explain how the logic inside the condition works and its logical flow(in the second line).**
+
+---
+
 ## **Callbacks Docs**
 This section explains the core **callbacks** used in the game logic.
 
