@@ -34,13 +34,13 @@ Files are organized into the following folders:
 You should ideally document **everything** you push or edit in the **h2h-market** repository!
 
 ### **Setup for editing the documentation:**
-The website is built using **Docusaurus** (https://docusaurus.io/docs). To contribute, **pull the code** from the `documentation` branch in the repository.
+The website is built using **Docusaurus** (https://docusaurus.io/docs). To contribute, **pull the code** from the `documentation` branch in the `digital-information-research-lab.github.io` repository.
 
 ### **Steps to start working:**
 1. **Install Dependencies:** run `install npm` in your terminal.
 2. **Run the site locally:** run `npm run start`.
 3. **Modify and edit markdown files** following the documentation structure.
-4. **Commit and push your changes** to keep the documentation updated.
+4. **Commit and push your changes** in the `documentation` branch to keep the documentation updated.
 
 **Important:** Try **NOT** to edit the configuration file, as it is linked to deployment!
 
