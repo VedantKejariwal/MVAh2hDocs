@@ -100,4 +100,11 @@ This section explains the **different game stages** in the client-side implement
 
 ---
 
+## **Deployment Docs**
+This section explains how to **deploy the marketplace** in Google Cloud Platform.
+
+- [Setting up the Server](docs/documentationInstructions/SetUp.md)
+
+---
+
 By following this documentation, you will gain an in-depth understanding of the **MVA h2h marketplace** and how to work with it effectively.
